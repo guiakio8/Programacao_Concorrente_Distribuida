@@ -2,27 +2,35 @@ package Classes;
 
 public class Loja {
     private String nomeLoja;
-    private Conta contaLoja;
+    private Conta saldoLoja;
     private double pagamentoFunci;
 
     public Loja(String nomeLoja, double saldo) {
         this.nomeLoja = nomeLoja;
-        this.contaLoja = new Conta(saldo);
+        this.saldoLoja = new Conta(saldo);
+        System.out.println("Saldo atual: " + "R$" + saldoLoja.getSaldo() + " de " + getNomeLoja());
     }
 
     public void receber(double valorCompra){
-        contaLoja.depositar(valorCompra);
+        saldoLoja.depositar(valorCompra);
         pagamentoFunci += valorCompra;
-
-        if (pagamentoFunci >= 1400) {
-
-        }
+//        System.out.println("Saldo da loja: " + getSaldoLoja());
+//        if (pagamentoFunci >= 1400) {
+//
+//        }
     }
 
     public void pagarFunci(){
-        contaLoja.retirar(1400);
-
+        saldoLoja.retirar(1400);
         System.out.println("Pagamento do funcionário realizado");
     }
 
+
+    public String getNomeLoja() {
+        return nomeLoja;
+    }
+
+    public double getSaldoLoja() {
+        return saldoLoja.getSaldo();
+    }
 }

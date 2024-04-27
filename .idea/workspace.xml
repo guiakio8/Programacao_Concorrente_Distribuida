@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3516e9fc-37ac-477c-92a8-c89cc439560b" name="Changes" comment="">
+    <list default="true" id="3516e9fc-37ac-477c-92a8-c89cc439560b" name="Changes" comment="🤪">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Loja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -25,6 +26,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;guiakio8&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="338d9f4a-3af2-42fd-9f16-64c2746eb914" />
+        <option name="url" value="https://github.com/guiakio8/Programacao_Concorrente_Distribuida.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -47,7 +62,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/guiak/Desktop/ATT1/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -76,8 +91,19 @@
       <workItem from="1714188345791" duration="5185000" />
       <workItem from="1714196732775" duration="56000" />
       <workItem from="1714234637385" duration="14000" />
-      <workItem from="1714240014405" duration="3285000" />
+      <workItem from="1714240014405" duration="8187000" />
+      <workItem from="1714250045817" duration="4254000" />
+      <workItem from="1714256172359" duration="1555000" />
     </task>
+    <task id="LOCAL-00001" summary="🤪">
+      <option name="closed" value="true" />
+      <created>1714243499568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714243499569</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +113,11 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
