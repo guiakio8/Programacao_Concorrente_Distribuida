@@ -60,11 +60,9 @@ public class Cliente extends Thread {
                 if (valorGasto > 0) {
 
                     synchronized (banco){
-                        banco.transferir(this, lojaSelecionada, valorCompra);
+                        banco.compraLoja(this, lojaSelecionada, valorCompra);
                     }
-
                 }
-
 
                 try {
                     Thread.sleep(10);

@@ -5,15 +5,29 @@ public class Funcionario extends Thread{
     private Conta contaFunci;
     private Conta contaInvestFunci;
 
-    public Funcionario(String nome) {
+    public Funcionario(String nome, double saldo) {
         this.nomeFunci = nome;
-
+        this.contaFunci = new Conta(saldo);
+        this.contaInvestFunci = new Conta(saldo);
     }
 
 
-    public void receber(){
-
-
+    public void receber(double salario){
+        contaFunci.depositar(salario);
+        double investimento = contaFunci.getSaldo();
+        contaInvestFunci.depositar(investimento * 0.20);
+        contaFunci.retirar(investimento);
     }
 
+    public String getNomeFunci() {
+        return nomeFunci;
+    }
+
+    public double getSaldoContaFunci() {
+        return contaFunci.getSaldo();
+    }
+
+    public double getSaldoContaInvestFunci() {
+        return contaInvestFunci.getSaldo();
+    }
 }

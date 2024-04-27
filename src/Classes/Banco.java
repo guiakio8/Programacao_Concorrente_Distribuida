@@ -10,7 +10,7 @@ public class Banco {
         this.lock = new ReentrantLock();
     }
 
-    public void transferir(Cliente cliente, Loja loja, double valor) {
+    public void compraLoja(Cliente cliente, Loja loja, double valor) {
         lock.lock();
         try {
             loja.receber(valor);
@@ -18,6 +18,17 @@ public class Banco {
         } finally {
             lock.unlock();
         }
-
     }
+
+//    public void pagamentoFunci(Loja loja, Funcionario funcionario, double valor) {
+//        lock.lock();
+//        try {
+//            loja.receber(valor);
+//            System.out.println("Pagamento de R$" + valor + " de " + funcionario.getNomeFunci() + " para " + loja.getNomeLoja());
+//        } finally {
+//            lock.unlock();
+//        }
+//    }
+
+
 }

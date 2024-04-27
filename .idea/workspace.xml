@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3516e9fc-37ac-477c-92a8-c89cc439560b" name="Changes" comment="🤪">
+    <list default="true" id="3516e9fc-37ac-477c-92a8-c89cc439560b" name="Changes" comment="FINALMENTE threads syncros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Conta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Classes/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Loja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -93,7 +93,7 @@
       <workItem from="1714234637385" duration="14000" />
       <workItem from="1714240014405" duration="8187000" />
       <workItem from="1714250045817" duration="4254000" />
-      <workItem from="1714256172359" duration="1555000" />
+      <workItem from="1714256172359" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="🤪">
       <option name="closed" value="true" />
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714243499569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FINALMENTE threads syncros">
+      <option name="closed" value="true" />
+      <created>1714257777560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714257777560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +122,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="FINALMENTE threads syncros" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINALMENTE threads syncros" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
