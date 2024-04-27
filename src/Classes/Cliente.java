@@ -7,6 +7,7 @@ public class Cliente extends Thread {
     public Cliente(String nomeCli, double saldo) {
         this.nomeCli = nomeCli;
         this.contaCli = new Conta(saldo);
+        System.out.println("Saldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
     }
 
     private boolean saldoPos() {
@@ -25,6 +26,7 @@ public class Cliente extends Thread {
             if (saldo >= valorCompra) {
                 contaCli.retirar(valorCompra);
                 System.out.println(getNomeCli() + " Realizou uma compra no valor: " + valorCompra);
+                System.out.println("Saldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
             }
         }
     }
@@ -33,15 +35,16 @@ public class Cliente extends Thread {
         return nomeCli;
     }
 
-
     @Override
     public void run() {
-        while (saldoPos()) {
-            comprar();
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+        synchronized (contaCli) {
+            while (saldoPos()) {
+                comprar();
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
         }
     }
