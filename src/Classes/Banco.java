@@ -20,15 +20,14 @@ public class Banco {
         }
     }
 
-//    public void pagamentoFunci(Loja loja, Funcionario funcionario, double valor) {
-//        lock.lock();
-//        try {
-//            loja.receber(valor);
-//            System.out.println("Pagamento de R$" + valor + " de " + funcionario.getNomeFunci() + " para " + loja.getNomeLoja());
-//        } finally {
-//            lock.unlock();
-//        }
-//    }
+    public void pagamentoFunci(Loja loja, Funcionario funcionario) {
+        lock.lock();
+        try {
+            loja.pagarFunci(funcionario);
+        } finally {
+            lock.unlock();
+        }
+    }
 
 
 }

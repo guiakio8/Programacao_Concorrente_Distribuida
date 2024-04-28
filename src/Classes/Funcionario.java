@@ -14,8 +14,8 @@ public class Funcionario extends Thread{
 
     public void receber(double salario){
         contaFunci.depositar(salario);
-        double investimento = contaFunci.getSaldo();
-        contaInvestFunci.depositar(investimento * 0.20);
+        double investimento = salario * 0.20;
+        contaInvestFunci.depositar(investimento);
         contaFunci.retirar(investimento);
     }
 
