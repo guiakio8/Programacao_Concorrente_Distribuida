@@ -18,7 +18,7 @@ public class Cliente extends Thread {
         this.loja1 = loja1;
         this.loja2 = loja2;
         this.lock = new ReentrantLock();
-        System.out.println("Saldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
+        System.out.println("\nSaldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
     }
 
     public boolean saldoPos() {
@@ -34,10 +34,10 @@ public class Cliente extends Thread {
 
         if (saldo >= valorCompra) {
             contaCli.retirar(valorCompra);
-            System.out.println(getNomeCli() + " Realizou uma compra no valor: " + valorCompra);
-            System.out.println("Saldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
+//            System.out.println("\n" + getNomeCli() + " Realizou uma compra no valor: " + valorCompra);
+//            System.out.println("Saldo atual: " + "R$" + contaCli.getSaldo() + " de " + getNomeCli());
             return valorCompra;
-        }else {
+        } else {
             return 0;
         }
     }
@@ -46,6 +46,9 @@ public class Cliente extends Thread {
         return nomeCli;
     }
 
+    public double getSaldoCli() {
+        return contaCli.getSaldo();
+    }
 
     @Override
     public void run() {
@@ -59,7 +62,7 @@ public class Cliente extends Thread {
 
                 if (valorGasto > 0) {
 
-                    synchronized (banco){
+                    synchronized (banco) {
                         banco.compraLoja(this, lojaSelecionada, valorCompra);
                     }
                 }

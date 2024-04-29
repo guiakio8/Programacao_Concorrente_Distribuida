@@ -39,6 +39,11 @@ public class Main {
             System.out.println(e);
         }
 
+        System.out.println("Saldo atual: " + "R$" + cli1.getSaldoCli() + " de " + cli1.getNomeCli());
+        System.out.println("Saldo atual: " + "R$" + cli2.getSaldoCli() + " de " + cli2.getNomeCli());
+        System.out.println("Saldo atual: " + "R$" + cli3.getSaldoCli() + " de " + cli3.getNomeCli());
+        System.out.println("Saldo atual: " + "R$" + cli4.getSaldoCli() + " de " + cli4.getNomeCli());
+        System.out.println("Saldo atual: " + "R$" + cli5.getSaldoCli() + " de " + cli5.getNomeCli());
 
         System.out.println("\nSaldo final da Loja1: R$" + loja1.getSaldoLoja());
         System.out.println("\nSaldo final da Loja2: R$" + loja2.getSaldoLoja());

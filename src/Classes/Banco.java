@@ -14,15 +14,18 @@ public class Banco {
         lock.lock();
         try {
             loja.receber(valor);
-            System.out.println("Pagamento de R$" + valor + " de " + cliente.getNomeCli() + " para " + loja.getNomeLoja());
+            System.out.println("\nCompra de R$" + valor + " de " + cliente.getNomeCli() + " para " + loja.getNomeLoja());
         } finally {
             lock.unlock();
         }
     }
 
-    public void pagamentoFunci(Loja loja, Funcionario funcionario) {
+    public void pagamentoFunci(Loja loja, Funcionario funcionario, double pagamento) {
         lock.lock();
         try {
+            loja.retirar(pagamento);
+            funcionario.receber(pagamento);
+            System.out.println("\nPagamento de R$" + pagamento + " para " + funcionario.getNomeFunci() + " realizado pela loja " + loja.getNomeLoja());
             loja.pagarFunci(funcionario);
         } finally {
             lock.unlock();

@@ -14,7 +14,7 @@ public class Loja {
         this.funcionario1 = funcionario1;
         this.funcionario2 = funcionario2;
         this.banco = banco;
-        System.out.println("Saldo atual: " + "R$" + saldoLoja.getSaldo() + " de " + getNomeLoja());
+        System.out.println("\nSaldo atual: " + "R$" + saldoLoja.getSaldo() + " de " + getNomeLoja());
     }
 
     public void receber(double valorCompra) {
@@ -29,17 +29,14 @@ public class Loja {
 
     public void pagarFunci(Funcionario funcionario) {
         double pagamento = 1400;
+        Funcionario funcionarioteste = funcionario1.getSaldoContaFunci() > funcionario2.getSaldoContaFunci() ? funcionario2 : funcionario1;
         if (saldoLoja.getSaldo() >= pagamento) {
-            saldoLoja.retirar(pagamento);
-            funcionario.receber(pagamento);
-            System.out.println("Pagamento de R$" + pagamento + " para " + funcionario.getNomeFunci() + " realizado pela loja " + getNomeLoja());
+            banco.pagamentoFunci(this, funcionario, pagamento);
+//            saldoLoja.retirar(pagamento);
+//            funcionario.receber(pagamento);
+//            System.out.println("Pagamento de R$" + pagamento + " para " + funcionario.getNomeFunci() + " realizado pela loja " + getNomeLoja());
         }
     }
-
-    public void pagar(double valor){
-        saldoLoja.retirar(valor);
-    }
-
 
     public String getNomeLoja() {
         return nomeLoja;
@@ -47,5 +44,9 @@ public class Loja {
 
     public double getSaldoLoja() {
         return saldoLoja.getSaldo();
+    }
+
+    public void retirar(double valorCompra) {
+        saldoLoja.retirar(valorCompra);
     }
 }
