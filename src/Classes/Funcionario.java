@@ -9,6 +9,7 @@ public class Funcionario extends Thread{
         this.nomeFunci = nome;
         this.contaFunci = new Conta(saldo);
         this.contaInvestFunci = new Conta(saldo);
+        System.out.println("\nSaldo atual: " + "R$" + contaFunci.getSaldo() + " de " + getNomeFunci());
     }
 
 
